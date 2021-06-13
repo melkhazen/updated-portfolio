@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Enumerable Planets</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<h1>Pick a planet:</h1>
+<div>
+    <ul>
+        <li th:each="planet : ${planets}"
+            th:text="'The year length on' + ' ' +${planet.displayName} +' is' + ' ' + ${planet.yearLength} + ' earth days.'"></li>
+    </ul>
+</div>
+</body>
+</html>

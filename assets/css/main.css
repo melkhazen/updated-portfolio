@@ -2044,6 +2044,8 @@ input, select, textarea {
 
 /* Image */
 
+
+
 	.image {
 		border-radius: 5px;
 		border: 0;
@@ -2203,6 +2205,8 @@ input, select, textarea {
 			.image.main img {
 				border-radius: 0;
 			}
+
+			
 
 /* List */
 
@@ -2664,7 +2668,13 @@ input, select, textarea {
 			padding-right: 2.5em;
 			vertical-align: middle;
 			width: 48%;
+			filter: drop-shadow(-3px 3px 5px #343436);
 		}
+		.features article .image img:hover{
+			filter: contrast(110%) brightness(103%) drop-shadow(-2px 2px 3px #343436);
+			transition: .2s linear;
+		}
+
 
 			.features article .image img {
 				display: block;
